@@ -1,4 +1,4 @@
-const { User } = require('../db/models');
+// const { User } = require('../db/models');
 
 // промежуточная функция для очистки куки при истёкшей сессии на сервере
 const cookiesCleaner = (req, res, next) => {
