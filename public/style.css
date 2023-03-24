@@ -1,11 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
 .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 140px;
+  margin-top: 30px;
+	
 }
 
 .card {
   display: flex !important;
   justify-content: center !important;
+	margin-left: 40px;
+}
+.garru-img {
+  width: 210px;
+	padding: 20px;
+	margin: 0 auto;
+	
+}
+.kino-img{
+	width: 250px;
+	padding: 20px;
+	margin: 0 auto;
+}
+.question{
+	width: 180px;
+	padding: 20px;
+
+	margin: 0 auto;
+	margin-top: 40px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(/img/6.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  background-attachment: fixed;
+}
+.text-center{
+	font-family: 'Marck Script', cursive;
+	margin-top: 30px;
+	font-size: 70px
+}
+.navbar-brand{
+	font-family: 'Marck Script', cursive;
+	font-size: 30px;
+}
+.nav-link{
+	font-family: 'Marck Script', cursive;
+	font-size: 25px;
+	margin-left: 50px;
+	padding-top: 10px;
 }
