@@ -2,12 +2,13 @@ const React = require('react');
 
 module.exports = function CardQuestion({ quest, users }) {
   return (
-    <form method="post" data-checkId={`${quest.id}`}>
-      <div className="card" style={{ width: '30rem' }}>
+    <form className="formQuest" method="post" data-checkId={`${quest.id}`}>
+      <div className="card" style={{ width: '30rem', textAlign: 'center' }}>
         <div className="card-body">
           <p className="card-text">{quest.questions}</p>
         </div>
         <input
+          style={{ textAlign: 'center' }}
           type="text"
           className="form-control"
           aria-describedby="emailHelp"
@@ -40,8 +41,8 @@ module.exports = function CardQuestion({ quest, users }) {
             Перейти к следующему вопросу
           </button>
         )}
+        <div className="otvet" style={{ textAlign: 'center' }} />
       </div>
-      <div className="otvet" />
     </form>
   );
 };

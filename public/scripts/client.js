@@ -1,4 +1,25 @@
 const body = document.querySelector('body');
+const delBtn = document.querySelector('.DelBtn')
+const delBtn2 = document.querySelector('.DelBtn2')
+const delBtn3 = document.querySelector('.DelBtn3')
+
+if (delBtn) {
+  delBtn.addEventListener('click', (e) => {
+    delBtn.remove()
+  })
+}
+if (delBtn2) {
+  delBtn.addEventListener('click', (e) => {
+    delBtn.remove()
+  })
+}
+if (delBtn3) {
+  delBtn.addEventListener('click', (e) => {
+    delBtn.remove()
+  })
+}
+
+
 if (body) {
   body.addEventListener('click', async (e) => {
     if (e.target.classList.contains('nextBtn')) {

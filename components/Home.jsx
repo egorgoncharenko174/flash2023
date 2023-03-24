@@ -3,6 +3,7 @@ const Layout = require('./Layout');
 
 module.exports = function Home({ topic, users }) {
   return (
+
     <Layout users={users}>
       <h1 className="text-center">Выберите тему</h1>
 
@@ -54,6 +55,9 @@ module.exports = function Home({ topic, users }) {
           </div>
         </div>
       </div>
+      <button type="submit" className="DelBtn btn btn-danger">
+        Кнопка УДАЛИТЬ Егора
+      </button>
     </Layout>
   );
 };
