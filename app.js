@@ -9,8 +9,9 @@ const session = require('express-session');
 const renderComponents = require('./middleware/renderComponent');
 const homeRouter = require('./routes/home.routes');
 const questionRouter = require('./routes/question.routes');
+const authRoute = require('./routes/auth.routes');
 const sessionConfig = require('./config/sessionConfig');
-const { cookiesCleaner, getUser } = require('./middleware/auth');
+const { resLocals, getUser } = require('./middleware/auth');
 
 const app = express();
 
@@ -18,7 +19,7 @@ const PORT = process.env.PORT || 4000;
 
 app.use(cookieParser());
 app.use(session(sessionConfig));
-app.use(cookiesCleaner);
+app.use(resLocals);
 app.use(getUser);
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -28,6 +29,7 @@ app.use(morgan('dev'));
 
 app.use('/', homeRouter);
 app.use('/topic', questionRouter);
+app.use('/auth', authRoute);
 
 app.listen(PORT, () => {
   console.log(`Сервер пашет на ${PORT} порту`);
