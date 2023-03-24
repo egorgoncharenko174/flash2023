@@ -13,14 +13,14 @@ module.exports = function Home({ topic, users }) {
             <h5 style={{ textAlign: 'center' }} className="card-title">
               {topic[0].title}
             </h5>
-            <div className="button-rigth">
-              <a
-                href="http://localhost:4000/topic/1/question/1"
-                className="btn btn-primary"
-              >
-                Go somewhere
-              </a>
-            </div>
+
+            <a
+              href="http://localhost:4000/topic/1/question/1"
+              className="btn btn-primary"
+            >
+              Перейти к теме
+            </a>
+
           </div>
         </div>
         <div className="card" style={{ width: '25rem' }}>
@@ -34,7 +34,7 @@ module.exports = function Home({ topic, users }) {
               href="http://localhost:4000/topic/2/question/8"
               className="btn btn-primary"
             >
-              Go somewhere
+              Перейти к теме
             </a>
           </div>
         </div>
@@ -49,7 +49,7 @@ module.exports = function Home({ topic, users }) {
               href="http://localhost:4000/topic/3/question/15"
               className="btn btn-primary"
             >
-              Go somewhere
+              Перейти к теме
             </a>
           </div>
         </div>

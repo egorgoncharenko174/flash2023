@@ -2,7 +2,7 @@ const React = require('react');
 
 module.exports = function CardQuestion({ quest, users }) {
   return (
-    <form>
+    <form method="post" data-checkId={`${quest.id}`}>
       <div className="card" style={{ width: '30rem' }}>
         <div className="card-body">
           <p className="card-text">{quest.questions}</p>
@@ -10,16 +10,21 @@ module.exports = function CardQuestion({ quest, users }) {
         <input
           type="text"
           className="form-control"
-          id="exampleInputEmail1"
           aria-describedby="emailHelp"
-          id="answer"
+          id="answerInput"
           placeholder="Введи ответ сюда"
+          name="answerInput"
         />
-        <button type="button" className="btn btn-dark">
+        <button
+          data-Questionid={`${quest.id}`}
+          data-temaId={`${quest.topic_id}`}
+          type="submit"
+          className="btn btn-dark"
+          data-id={quest.id}
+        >
           Проверить вопрос
         </button>
-        {quest.id === 7 || quest.id === 14 || quest.id === 21
-         ? (
+        {quest.id === 7 || quest.id === 14 || quest.id === 21 ? (
           <a href="/">
             <button type="button" className="btn btn-dark">
               Выйти к выбору тем
@@ -36,6 +41,7 @@ module.exports = function CardQuestion({ quest, users }) {
           </button>
         )}
       </div>
+      <div className="otvet" />
     </form>
   );
 };
