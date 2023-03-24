@@ -15,6 +15,7 @@ module.exports = function Layout({ children, title }) {
           crossorigin="anonymous"
         ></link>
         <link rel="stylesheet" href="/style.css" />
+        <script defer src="/scripts/client.js" />
         <title>{title}</title>
       </head>
       <body>

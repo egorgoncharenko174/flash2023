@@ -8,6 +8,7 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const renderComponents = require('./middleware/renderComponent');
 const homeRouter = require('./routes/home.routes');
+const questionRouter = require('./routes/question.routes');
 const sessionConfig = require('./config/sessionConfig');
 const { cookiesCleaner, getUser } = require('./middleware/auth');
 
@@ -26,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(morgan('dev'));
 
 app.use('/', homeRouter);
+app.use('/topic', questionRouter);
 
 app.listen(PORT, () => {
   console.log(`Сервер пашет на ${PORT} порту`);
