@@ -2,10 +2,10 @@ const React = require('react');
 const Layout = require('./Layout');
 const CardQuestion = require('./CardQuestion')
 
-module.exports = function Question({ quest }) {
+module.exports = function Question({ quest, users }) {
   return (
-    <Layout>
-      <CardQuestion quest={quest} />
+    <Layout users={users}>
+      <CardQuestion quest={quest} users={users} />
     </Layout>
   );
 };

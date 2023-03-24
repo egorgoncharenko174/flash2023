@@ -1,7 +1,7 @@
 const React = require('react');
 const Navbar = require('./Navbar');
 
-module.exports = function Layout({ children, title }) {
+module.exports = function Layout({ children, title, users }) {
   return (
     <html lang="ru">
       <head>
@@ -16,10 +16,11 @@ module.exports = function Layout({ children, title }) {
         ></link>
         <link rel="stylesheet" href="/style.css" />
         <script defer src="/scripts/client.js" />
+        <script defer src="/scripts/auth.js" />
         <title>{title}</title>
       </head>
       <body>
-        <Navbar />
+        <Navbar users={users}/>
         {children}
       </body>
     </html>

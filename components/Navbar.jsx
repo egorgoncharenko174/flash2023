@@ -1,7 +1,7 @@
 const React = require('react');
 const Layout = require('./Layout');
 
-module.exports = function Navbar() {
+module.exports = function Navbar({ users }) {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
@@ -21,20 +21,29 @@ module.exports = function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
+					{!users && (
+						<>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                Лога
+              <a href="/auth/" className="nav-link active" aria-current="page">
+                Зайти
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Рега
+              <a href="/auth/reg" className="nav-link">
+                Зарегистрироваться
               </a>
             </li>
+						</>
+						)}
+						{users && (
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a href="/auth/logout" className="nav-link">
                 Выйти
               </a>
+            </li>
+						)}
+            <li className="nav-item">
+              <div>{users?.name}</div>
             </li>
             {/* <li className="nav-item">
               <a className="nav-link disabled">Выйти</a>

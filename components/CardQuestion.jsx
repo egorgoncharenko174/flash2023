@@ -1,6 +1,6 @@
 const React = require('react');
 
-module.exports = function CardQuestion({ quest }) {
+module.exports = function CardQuestion({ quest, users }) {
   return (
     <form className="formQuest" method="post" data-checkId={`${quest.id}`}>
       <div className="card" style={{ width: '30rem', textAlign: 'center' }}>

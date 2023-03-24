@@ -15,17 +15,20 @@
 }
 .garru-img {
   width: 210px;
-  padding: 20px;
-  margin: 0 auto;
+
+	padding: 20px;
+	margin: 0 auto;
+	
 }
-.kino-img {
-  width: 250px;
-  padding: 20px;
-  margin: 0 auto;
+.kino-img{
+	width: 270px;
+	padding: 20px;
+	margin: 0 auto;
 }
-.question {
-  width: 180px;
-  padding: 20px;
+.question{
+	width: 280px;
+	padding: 20px;
+
 
   margin: 0 auto;
   margin-top: 40px;
@@ -87,3 +90,30 @@ body {
   font-size: 50px;
   font-family: 'Marck Script';
 }
+
+.text-center{
+	font-family: 'Marck Script', cursive;
+	margin-top: 30px;
+	font-size: 70px
+}
+.navbar-brand{
+	font-family: 'Marck Script', cursive;
+	font-size: 30px;
+}
+.nav-link{
+	font-family: 'Marck Script', cursive;
+	font-size: 25px;
+	margin-left: 50px;
+	padding-top: 10px;
+}
+.button-rigth{
+	align-items: center;
+	padding: 30px;
+}
+.btn, .btn-primary{
+	display: flex;
+	align-items: center;
+	margin-left: 50px;
+	width: 200px;
+}
+
