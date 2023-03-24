@@ -7,7 +7,6 @@ const Home = require('../components/Home');
 router.get('/', async (req, res) => {
   const topic = await Topic.findAll();
   res.renderComponent(Home, { title: 'Главная страница', topic });
-  console.log(topic)
 });
 
 module.exports = router;
