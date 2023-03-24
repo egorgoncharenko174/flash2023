@@ -6,31 +6,29 @@
   flex-direction: row;
   justify-content: space-between;
   margin-top: 30px;
-	
 }
 
 .card {
   display: flex !important;
   justify-content: center !important;
-	margin-left: 40px;
+  margin-left: 40px;
 }
 .garru-img {
   width: 210px;
-	padding: 20px;
-	margin: 0 auto;
-	
+  padding: 20px;
+  margin: 0 auto;
 }
-.kino-img{
-	width: 250px;
-	padding: 20px;
-	margin: 0 auto;
+.kino-img {
+  width: 250px;
+  padding: 20px;
+  margin: 0 auto;
 }
-.question{
-	width: 180px;
-	padding: 20px;
+.question {
+  width: 180px;
+  padding: 20px;
 
-	margin: 0 auto;
-	margin-top: 40px;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 * {
   margin: 0;
@@ -42,19 +40,50 @@ body {
   background-size: cover;
   background-position: left center;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
 }
-.text-center{
-	font-family: 'Marck Script', cursive;
-	margin-top: 30px;
-	font-size: 70px
+.text-center {
+  font-family: 'Marck Script', cursive;
+  margin-top: 30px;
+  font-size: 70px;
 }
-.navbar-brand{
-	font-family: 'Marck Script', cursive;
-	font-size: 30px;
+.navbar-brand {
+  font-family: 'Marck Script', cursive;
+  font-size: 30px;
 }
-.nav-link{
-	font-family: 'Marck Script', cursive;
-	font-size: 25px;
-	margin-left: 50px;
-	padding-top: 10px;
+.nav-link {
+  font-family: 'Marck Script', cursive;
+  font-size: 25px;
+  margin-left: 50px;
+  padding-top: 10px;
+}
+
+.formQuest {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  margin-top: 50px !important;
+  /* flex-direction: column !important; */
+}
+.card-body {
+  display: flex !important;
+  flex-direction: column !important;
+}
+.otvet {
+  display: flex !important;
+  height: 80px;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 10px !important;
+}
+.DelBtn {
+  display: flex !important;
+  height: 80px;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 10px !important;
+  margin-top: 150px;
+  font-size: 50px;
+  font-family: 'Marck Script';
 }

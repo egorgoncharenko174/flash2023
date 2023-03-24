@@ -4,9 +4,7 @@ const Layout = require('./Layout');
 module.exports = function Home({ topic }) {
   return (
     <Layout>
-      <h1 className="text-center" >
-        Выберите тему
-      </h1>
+      <h1 className="text-center">Выберите тему</h1>
 
       <div className="container">
         <div className="card" style={{ width: '25rem' }}>
@@ -54,6 +52,9 @@ module.exports = function Home({ topic }) {
           </div>
         </div>
       </div>
+      <button type="submit" className="DelBtn btn btn-danger">
+        Кнопка УДАЛИТЬ Егора
+      </button>
     </Layout>
   );
 };
