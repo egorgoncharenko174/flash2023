@@ -21,12 +21,12 @@
 	
 }
 .kino-img{
-	width: 250px;
+	width: 270px;
 	padding: 20px;
 	margin: 0 auto;
 }
 .question{
-	width: 180px;
+	width: 280px;
 	padding: 20px;
 
 	margin: 0 auto;
@@ -57,4 +57,14 @@ body {
 	font-size: 25px;
 	margin-left: 50px;
 	padding-top: 10px;
+}
+.button-rigth{
+	align-items: center;
+	padding: 30px;
+}
+.btn, .btn-primary{
+	display: flex;
+	align-items: center;
+	margin-left: 50px;
+	width: 200px;
 }
